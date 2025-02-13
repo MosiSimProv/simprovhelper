@@ -7,7 +7,7 @@ At its core the library consists of three files for demonstrating different cpat
 
 - `__init__.py` provides two simple functions which allow to configure the host and port of the provenance builder as well as allowing to send an event
 - `base.py` consists of two functions that wraps the creation of specific events
-- `tellurium.py` consists of a wrapper-function that calls Tellurium for running a simulation and sending the respecitive provenance events
+- `tellurium.py` consists of a wrapper-function that calls Tellurium for running a simulation and sending the respective provenance events
 
 Moreover, all of these implementations are based on each other to demonstrate how these concepts can be intertwined.
 
@@ -16,8 +16,8 @@ Moreover, all of these implementations are based on each other to demonstrate ho
 
     This library is just a proof of concept.
     The library was to be used with the corresponding rules and provenance pattern.
-    The rules and patterns can be found as part of the `examples` of the SimProb-Quickstart template: https://github.com/MosiSimProv/simprov-quickstart
-    The complete quickstart guide can be found under https://simprov.readthedocs.io/en/latest/user/quickstart.html.
+    The rules and patterns can be found as part of the `examples` of the SimProb-Quickstart template: https://github.com/MosiSimProv/simprov-quickstart .
+    The complete quickstart guide can be found under https://simprov.readthedocs.io/en/latest/user/quickstart.html .
 
 
 Install and Usage
