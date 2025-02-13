@@ -1,0 +1,20 @@
+[project]
+name = "simprovhelper"
+version = '1.0'
+authors = [{ name = 'Andreas Ruscheinski', email = 'andreas.ruscheinski@uni-rostock.de' }, ]
+description = 'A utility library for sending events to simprov'
+readme = "README.rst"
+license = { file = "LICENSE" }
+
+dependencies = []
+
+
+[project.urls]
+Homepage = "https://github.com/MosiSimProv/simprovhelper"
+Documentation = "https://simprov.readthedocs.io/en/latest/user/utility_library.html"
+Repository = "https://github.com/MosiSimProv/simprovhelper.git"
+Issues = "https://github.com/MosiSimProv/simprovhelper/issues"
+
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"

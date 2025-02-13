@@ -1,0 +1,23 @@
+
+
+model M1
+    compartment Endosome;
+    Endosome = 1.0;
+    species Wnt, Lrp6_B_m, Lrp6_uB_m, Lrp6_B_e in Endosome;
+
+    Wnt = 2000;
+    Lrp6_B_m = 0;
+    Lrp6_uB_m = 4000;
+    Lrp6_B_e = 0;
+
+    J1: Lrp6_uB_m + Wnt -> Lrp6_B_m + Wnt; kLWntBind/(a*vm)*Lrp6_uB_m*Wnt;
+    J2: Lrp6_B_m -> Lrp6_uB_m; kLWntUnbind*Lrp6_B_m;
+    J3: Lrp6_B_m -> Lrp6_B_e; ke*Lrp6_B_m;
+
+    kLWntBind = 2.16e6;
+    kLWntUnbind = 0.02;
+    ke = 0.05;
+
+    a = 6.022e23;
+    vm = 1.37e-14;
+end
